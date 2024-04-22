@@ -32,7 +32,7 @@ public class AuthenticationController {
             throw new RuntimeException(e);
         }
     }
-    @PostMapping
+    @PostMapping("/signin")
     public String login(@RequestBody Customer customer) {
         Authentication authentication = authenticationManager
                 .authenticate(
